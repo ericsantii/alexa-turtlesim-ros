@@ -1,0 +1,22 @@
+{
+  "name": "alexa-turtlesim-ros",
+  "version": "1.0.0",
+  "description": "A way to control the ROS turtlesim with Alexa",
+  "main": "index.js",
+  "author": "Eric Santillana",
+  "dependencies": {
+    "alexa-sdk": "^1.0.10",
+    "bluebird": "^2.9.34",
+    "body-parser": "~1.0.1",
+    "ejs": "~0.7.1",
+    "express": "~4.0.0",
+    "hotswap": "^1.1.0",
+    "lodash.defaults": "^4.2.0",
+    "prompt": "^1.0.0",
+    "roslib": "^0.18.0",
+    "eventemitter2": "^4.1.0"
+  },
+  "devDependencies": {
+    "supervisor": "^0.6.0"
+  }
+}
