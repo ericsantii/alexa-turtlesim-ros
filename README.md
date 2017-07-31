@@ -28,9 +28,28 @@ git clone https://github.com/ericsantii/alexa-turtlesim-ros
 ``
 ### Install dependencies :
 ``
-cd alexa-turtlesim-ros
+cd alexa-turtlesim-ros npm install
 ``
+### Start proxy server :
 ``
-npm install
+bst proxy lambda index.js
 ``
+### Start ros master node:
+``
+roscore
+``
+### Start turtlesim
+``
+rosrun turtlesim turtlesim_node
+``
+### To check the output on the topic:
+``
+rostopic echo /turtle1/cmd_vel
+``
+### Start the rosbrige_server
+``
+roslaunch rosbridge_server rosbridge_websocket.launch
+``
+
+
 
