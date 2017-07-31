@@ -9,7 +9,7 @@ In addition to intalling ROS (any desktop-full, desktop, or ros-base will work),
 ``
 sudo apt-get install ros-<distro>-rosbridge-server
 ``
-Where <distro> is youre downloaded ROS version
+Where "<distro>" is youre downloaded ROS version
   
 ### Next install npm and node.js
 * [npm and node.js download instructions](https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/)
