@@ -1,5 +1,5 @@
 # alexa-turtlesim-ros
-Controlling the ROS turtlesim simulator with Amazon Alexa
+Controlling the ROS turtlesim simulator with Amazon Alexa. Before proceding any furder make sure you are familiar on how to make a basic skill on alexa.
 
 ### First step is to have ROS on your system
 * [ROS download instructions](http://wiki.ros.org/ROS/Installation)
