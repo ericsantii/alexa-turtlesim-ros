@@ -3,12 +3,14 @@ var ROSLIB = require('roslib');
 var Alexa = require('alexa-sdk');
 var EMMITER = require('eventemitter2');
 var HELP_REPROMPT = "What can I help you with?";
-var HELP_MESSAGE = "You can say give me that, or, you can I have a bowl... What can I help you with?";
+var HELP_MESSAGE = "You can say forward, backward turn left or turn right... What can I help you with?";
 var FORWARD = "forward";
 var BACKWARD = "backward";
 var TURN_LEFT = "turn left";
 var TURN_RIGHT = "turn right";
 var STOP_MESSAGE = "Goodbye!";
+var RECIPE_NOT_FOUND_MESSAGE = "I\'m sorry, I currently do not know that command. Please try again.";
+var RECIPE_NOT_FOUND_REPROMPT = "What else can I help with?";
 
 var ros = new ROSLIB.Ros({
   url : 'ws://localhost:9090'
@@ -106,6 +108,11 @@ var handlers = {
         else if(cmd === TURN_RIGHT){
      cmdVel.publish(twistr);
      this.emit(':tell', 'Turning right!');
+}
+else {
+           let speechOutput = RECIPE_NOT_FOUND_MESSAGE;
+           const repromptSpeech = RECIPE_NOT_FOUND_REPROMPT;
+           this.emit(':ask', speechOutput, repromptSpeech);
 }
    },
   'AMAZON.HelpIntent': function () {
