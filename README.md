@@ -22,7 +22,7 @@ node --version && npm --version
 ``
 sudo npm install bespoken-tools -g
 ``
-### Configure *[your amazon alexa skill,clone this guthub,start proxy server and intall dependencies on the cloned github's location](http://docs.bespoken.tools/en/latest/tutorials/tutorial_lambda_nodejs/)
+### Configure [your amazon alexa skill,clone this guthub,start proxy server and intall dependencies on the cloned github's location](http://docs.bespoken.tools/en/latest/tutorials/tutorial_lambda_nodejs/)
 Just follow the instructions but remember to clone this github and use the Intent Schema and Sample Utterances given
 in this github as well.
 
