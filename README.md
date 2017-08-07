@@ -30,9 +30,13 @@ in this github as well. Also remember to add a slot in the Interaction Model wit
 ``
 git clone https://github.com/ericsantii/alexa-turtlesim-ros
 ``
-### (If you followed the previous step you've alredy completed this step)Install dependencies :
+### (If you followed the previous step you've alredy completed this step) Go into cloned folder :
 ``
-cd alexa-turtlesim-ros npm install
+cd alexa-turtlesim-ros
+``
+### Install dependencies
+``
+npm install
 ``
 ### (If you followed the previous step you've alredy completed this step)Start proxy server :
 ``
