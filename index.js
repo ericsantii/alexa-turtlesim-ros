@@ -96,7 +96,7 @@ var handlers = {
 
     'MessageIntent': function () {
         var cmd = this.event.request.intent.slots.Item.value;
-        var distance = this.event.request.intent.slots.Distance.value;
+       
         if (cmd === FORWARD) {
             cmdVel.publish(twistf);
             this.emit(':ask', 'Moving forward...Please say another command or cancel if you want to exit');
